@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Survey</title>
+
+    <!--jQuery-->
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!--Semantic-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.js"></script>
+
+    <!--Custom Style-->
+    <!-- <link rel="stylesheet" href="css/surveyStyle.css"> -->
+
+    <!-- Custom JS -->
+    <script src="./js/script.js"></script>
+
+</head>
+<body>
+
+    <div id="main">
+        What kind of employee are you? 
+        <select id="employeeType">
+            <option value="">Select Value</option>
+            <option value="newhire">New Hire</option>
+            <option value="existing">Existing</option>
+            <option value="relocationg">Relocating</option>
+            <option value="intern">Intern</option>
+        </select>
+
+        Are you going in person?
+        <select onChange="nextQuestion(this)">
+            <option value="">--Please Select--</option>
+            <option value="remote">Remote</option>
+            <option value="hybrid">Hybrid</option>
+        </select>
+
+        
+    </div>
+        
+        <div id="checklist" style="display:none;">
+            <input type="checkbox" id="desk" name="desk" value="Desk">
+            <label for="desk"> Bike </label><br>
+            <input type="checkbox" id="chair" name="chair" value="Chair">
+            <label for="chair"> Chair </label><br>
+            <input type="checkbox" id="keyboard" name="keyboard" value="Keyboard">
+            <label for="keyboard"> Keyboard </label><br>   
+            <input type="checkbox" id="keyboard" name="keyboard" value="Keyboard">
+            <label for="keyboard"> Keyboard </label><br>     
+        </div>
+        
+
+    
+
+<!-- <div class="ui container">
+    <div class="main-container">
+        <div class="left-container">
+            <h2 id="show-counter"></h2>
+            <p id="show-data">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lobortis magna vel ipsum eleifend, sed
+                pellentesque neque finibus.</p>
+        </div>
+
+        <div class="right-container">
+            <button class="ui button survey-button" id="answer1">Strongly disagree</button>
+            <button class="ui button survey-button" id="answer2" >Disagree</button>
+            <button class="ui button survey-button" id="answer3">Neither agree nor disagree</button>
+            <button class="ui button survey-button" id="answer4">Agree</button>
+            <button class="ui button survey-button" id="answer5">Strongly agree</button>
+        </div>
+    </div>
+    <br>
+    <div class="navigation-controllers">
+        <button class="ui icon button left-arrow" id="prev-data">
+            <i class="ui icon arrow left"></i>
+        </button>
+        <button class="ui icon button right-arrow" disabled id="next-data">
+            <i class="ui icon arrow right"></i>
+        </button>
+        <button class="ui icon button" disabled id="review-data">
+            Review Data
+        </button>
+
+    </div>
+</div> -->
+</body>
+</html>
